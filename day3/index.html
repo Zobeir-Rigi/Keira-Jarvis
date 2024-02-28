@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submit.php" method="post">
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+
+        <label for="position">Applying for Position:</label>
+        <input type="text" id="position" name="position" required>
+        <br>
+
+        <label for="resume">Upload CV (PDF or Word):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        <br>
+
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+        <label for="contactEmail">Email</label>
+
+        <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+        <label for="contactPhone">Phone</label>
+        <br>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="checkbox" id="exp1" name="experience[]" value="1-3">
+        <label for="exp1">1-3 years</label>
+
+        <input type="checkbox" id="exp3" name="experience[]" value="3-5">
+        <label for="exp3">3-5 years</label>
+
+        <input type="checkbox" id="exp5" name="experience[]" value="5+">
+        <label for="exp5">5+ years</label>
+        <br>
+
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea id="coverLetter" name="coverLetter" cols="30" rows="10"></textarea>
+        <br>
+
+        <label for="howHeard">How did you hear about us?</label>
+        <select id="howHeard" name="howHeard">
+            <option value="website">Website</option>
+            <option value="jobBoard">Job Board</option>
+            <option value="referral">Referral</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+</body>
+</html>
