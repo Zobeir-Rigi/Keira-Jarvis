@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: bisque;
-    height: 100vh;
+    background-color: #14213d;
+    color: #b6b5ab;    height: 100vh;
 }
 /**********************Navbar */
 header{
@@ -18,6 +18,8 @@ header{
     display: flex;
     justify-content: space-evenly;
     padding-left: 10px;
+    background-color: #1b2a49; 
+    color: #b6b5ab;
 }
 
 .tailArt {
@@ -33,7 +35,6 @@ nav{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    background-color: aqua;
 }
 
 ul {
@@ -48,7 +49,7 @@ li{
     display: inline;
 }
 li>a{
-    color:black;
+    color: #b6b5ab;
     text-decoration: none;
 }
 li>a:hover{
@@ -64,4 +65,12 @@ footer{
     justify-content: center;
     margin-bottom: 10px;
     gap: 5px;
+}
+footer>a{
+    color: #b6b5ab;
+    text-decoration: none;
+}
+footer>a:hover{
+    color: brown;
+
 }
