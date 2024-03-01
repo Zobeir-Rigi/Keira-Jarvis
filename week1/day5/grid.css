@@ -5,31 +5,43 @@
 }
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-rows:200px 1fr 100px ;
     height: 100vh;
     grid-template-areas:
-    "adel adel"
-    "zobeir me"
-    "footer footer"
+    "h h h "
+    "a m m"
+    "s s s"
+    "f f f "
     ;
 }
 
 header {
-    grid-area: adel;
+    grid-area: h;
     background-color: blue;
+    padding: 20px;
+    
 }
 
 aside {
-    grid-area: zobeir;
+    grid-area: a;
     background-color: rgb(151, 137, 137);
+    padding: 20px;
 }
 main {
-    grid-area: me;
+    grid-area: m;
     background-color: aqua;
+    padding: 20px;
+}
+
+section {
+    grid-area: s;
+    background-color:chartreuse;
+
 }
 
 footer {
-    grid-area: footer;
+    grid-area: f;
     background-color: #fff;
+    padding: 20px;
 }
