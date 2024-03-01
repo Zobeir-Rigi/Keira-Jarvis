@@ -9,23 +9,23 @@
     grid-template-rows:200px 1fr 100px ;
     height: 100vh;
     grid-template-areas:
-    "header header"
-    "sidebar main"
+    "adel adel"
+    "zobeir me"
     "footer footer"
     ;
 }
 
 header {
-    grid-area: header;
+    grid-area: adel;
     background-color: blue;
 }
 
 aside {
-    grid-area: sidebar;
-    background-color: brown;
+    grid-area: zobeir;
+    background-color: rgb(151, 137, 137);
 }
 main {
-    grid-area: main;
+    grid-area: me;
     background-color: aqua;
 }
 
