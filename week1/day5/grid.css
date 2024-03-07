@@ -20,7 +20,15 @@ header {
     grid-area: h;
     background-color: blue;
     padding: 20px;
-    
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-areas: "l";
+
+}
+
+.logo {
+    grid-area: l;
+    background-color: rgb(203, 186, 186);
 }
 
 aside {
