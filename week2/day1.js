@@ -1,32 +1,17 @@
-sum = (a,b)=> {
-    return a+b;
+function sum (a,b){
+   return a += b
 }
 
-let a = 10;
-let b = 3;
-// console.log(sum(a,c));
+let a = 4
+let b = 3
+console.log(`The sum of a + b is equal to ${sum(a,b)}`)
+
+console.log ("a - b = ", a-b)
+console.log ("a * b = ", a*b)
+console.log("% is the remainder of division so a % b = ", a%b)
+
+const myName = "Saeid";
+console.log("Hello" + `\t` + myName);
 
 
-const myName = "Saeid"
-// myName = "Saeed";
-// console.log(myName)
 
-function exampleVar() {
-    if (true) {
-      var x = 10;
-      console.log(x); 
-    }
-    console.log(x); 
-  }
-
-// example();
-
-function exampleLet() {
-    if (true) {
-      let y = 20;
-      console.log(y); 
-    }
-    // console.log(y); 
-  }
-  
-   exampleLet();
