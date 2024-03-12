@@ -30,3 +30,11 @@ const f = [favoriteColor = "blue", favoriteMovie = "Mad Max", release = 2020]
 console.log(f[0],f[1], f[2]);
 
 8.
+const myName = "Saeid"
+console.log(`Hello ${myName}, How are you?`)
+
+9.
+myAge = (currentYear, birthYear) => (currentYear - birthYear)
+console.log(`Your age is = ${myAge(2024, 1994)}`);
+
+10.
