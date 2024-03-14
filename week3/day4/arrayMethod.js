@@ -20,7 +20,7 @@ console.log(`concatedArr => ${concatedArr}`);
 let joinedArr = frontend.join('*')
 console.log(`joinedArr => ${joinedArr}`)
 
-let mapedArr = frontend.map(item => console.log(item))
+let mapedArr = frontend.map(item => console.log(item + " Developer"))
 
 let filteredArr = concatedArr.filter(backend => backend == "Node.js")
 console.log(`filteredArr =>${filteredArr}`)
