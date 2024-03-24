@@ -26,7 +26,7 @@ let filteredArr = concatedArr.filter(backend => backend == "Node.js")
 console.log(`filteredArr =>${filteredArr}`)
 
 let numbers = [2,5,6]
-let reducedArr = numbers.reduce((acc, cur) => acc * cur)
+let reducedArr = numbers.reduce((a, b) => a * b)
 console.log(`reducedArr => ${reducedArr}`)
 
 frontend.forEach(item => console.log(item))
