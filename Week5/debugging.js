@@ -20,7 +20,7 @@ document.querySelector('h1').addEventListen('click', function() {
 // Intended to add a new paragraph at the end of the body.
 var newParagraph = document.createElement('p');
 newParagraph.textContet = 'This is a new paragraph.';
-document.bdy.appendChild(newParagraph);
+document.body.appendChild(newParagraph);
 
 // Debugging Exercise 5: Removing an Element
 // Intended to remove a paragraph from the page.
