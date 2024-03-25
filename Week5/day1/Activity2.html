@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Change Styles with JavaScript</title> 
+</head> 
+<body> 
+
+<p id="myParagraph">Watch my style change!</p> 
+<button id="changeStyleButton">Change Style</button> 
+<script>
+    document.getElementById('changeStyleButton').addEventListener('click', function(){
+        document.getElementById('myParagraph').style.color='red'
+    })
+</script>
+
+</body>
