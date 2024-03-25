@@ -37,14 +37,14 @@ for(var i = 0; i < paragraphs.length; i++) {
 // Debugging Exercise 7: Capturing User Input
 // Intended to log the input field's value when a button is clicked.
 document.querySelector('button').addEventListner('click', function() {
-  var userInput = document.querySelect('input[type="text"]').value;
-  console.log(userInpt);
+  var userInput = document.querySelector('input[type="text"]').value;
+  console.log(userInput);
 });
 
 // Debugging Exercise 8: Toggling a Class
 // Intended to toggle a class for the paragraph.
 var myParagraph = document.querySelector('p');
-myParagraph.classList.togle('highlight');
+myParagraph.classList.toggle('highlight');
 
 // Debugging Exercise 9: Setting Element Attributes
 // Intended to set the src attribute of an img element.
@@ -54,6 +54,6 @@ myImage.setAttribute('scr', 'image/path.jpg');
 // Debugging Exercise 10: Using `innerHTML` for Content
 // Intended to add a list inside a div container.
 var myDiv = document.querySelector('.container');
-myDiv.innerHTML = '<ul><li>Item 1</li><li>Item 2</li><ul>';
+myDiv.innerHTML = '<ul><li>Item 1</li><li>Item 2</li></ul>';
 
 // Note: Each of these examples contains intentional errors for debugging exercises.
