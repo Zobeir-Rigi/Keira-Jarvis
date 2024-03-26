@@ -14,8 +14,11 @@
     <button id = 'changeColor'>change p color</button>
 
     <script>
-            let para = document.querySelectorAll('p').forEach(el => el.style.backgroundColor = 'green')
-    
+        function changePColor(){
+            let para = document.querySelectorAll('p').forEach(el =>  {el.style.backgroundColor = 'green'
+            el.style.fontSize = '50px'})
+        }
+        document.getElementById('changeColor').addEventListener('click', changePColor)
     </script>
 </body>
 
