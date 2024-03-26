@@ -9,12 +9,18 @@
     <p class="paragraph">This is my first paragraph</p>
     <p class="paragraph">This is my first paragraph</p>
     <p class="paragraph">This is my first paragraph</p>
+    <button id = 'changeColor'>change p color</button>
 
     <script>
-       let para = document.getElementsByTagName('p')
+        function changeParagraphColor(){
+            let para = document.getElementsByTagName('p')
        for(let i = 0; i<para.length; i++){
        para[i].style.backgroundColor='yellow'
        }
+        }
+       
+
+       document.getElementById('changeColor').addEventListener('click', changeParagraphColor)
     </script>
 </body>
 
