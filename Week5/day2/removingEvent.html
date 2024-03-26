@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #target {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
+    <div id="target">Hover over me!</div>
+
     <button id="myBtn">Hi!</button>
     <script>
+            function handleMouseOver() {
+            targetElement.style.backgroundColor = 'lightgreen';
+        }
+            let targetElement = document.getElementById('target');
+            targetElement.addEventListener('mouseover', handleMouseOver);
+
+
         let clickHandler=()=>{
             alert("Wlcom to my Website")
         }
