@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="paragraph">This is my first paragraph</p>
+    <p class="paragraph">This is my first paragraph</p>
+    <p class="paragraph">This is my first paragraph</p>
+
+    <script>
+       let para = document.getElementsByClassName('paragraph')
+       for(let i = 0; i<para.length; i++){
+       para[i].style.backgroundColor='red'
+       }
+    </script>
+</body>
+
+</html>
