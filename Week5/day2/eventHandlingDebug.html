@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Event Handling</title>
+    <style>
+        .interactive {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .input-field {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="clickDiv" class="interactive">Click Me</div>
+    <div id="doubleClickDiv" class="interactive">Double Click Me</div>
+    <div id="mouseOverDiv" class="interactive">Mouse Over Me</div>
+    <input type="text" id="inputField" class="input-field" placeholder="Type something...">
+    <button id="focusBtn">Focus on Input Field</button>
+
+    <script>
+        // Example 1: click event
+        document.getElementById('clickDiv').addeventListener('click', function() {
+            alert('Div Clicked!');
+        });
+
+        // Example 2: double click event
+        var dblclickDiv = document.getElementByID('doubleClickDiv');
+        dblclickDiv.addEventListener('dblclick', function(evt) {
+            evt.target.style.backgroundColor = 'blue';
+        });
+
+        // Example 3: mouseover event
+        var mouseOverDiv = document.querySelector('#mouseOverDiv');
+        mouseOverDiv.addEventListener('mouseover', function() {
+            this.style.background = 'green';
+        });
+
+        // Example 4: mouseout event
+        mouseOverDiv.addEventListener('mouseout', function() {
+            // Missing function keyword
+            this.style.background = '';
+        });
+
+        // Example 5: keydown event
+        document.querySelector('.input-field').addEventListener('keydwon', function(e) {
+            if (e.keycode == 13) { // It should be e.keyCode
+                alert('You pressed enter!');
+            }
+        });
+
+        // Example 6: keyup event
+        let inputField = document.getElementById('inputField');
+        inputField.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                console.log('Enter key released');
+            }
+        });
+
+        // Example 7: load event
+        window.addEventListener('load', (event) => {
+            console.log('Page fully loaded');
+        });
+
+        // Example 8: focus event
+        document.getElementById('focusBtn').addEventListener('click', (event) => {
+            document.getElementById('inputField').focus();
+        });
+
+            // Example 9: blur event
+            inputField.addEventListener('blur', () => {
+                console.log('Input field lost focus');
+            });
+
+        // Example 10: change event
+        inputField.addEventListener('change', function(e) {
+            console.log('Input field changed:', e.target.value)
+        });
+
+        // Additional examples with various issues:
+        
+        // Example 11
+        var focusButton = document.getElementByI('focusBtn');
+        focusButton.onclick = focusInput();
+
+        // Example 12
+        window.addEventListener('load', function() {
+            // Correct syntax is document.getElementById
+            var clickDiv = document.getElemntById('clickDiv');
+            clickDiv.style.backgroundColor = 'red';
+        });
+
+        // Example 13
+        document.getElementById('inputField').addEventListener('keyUp', function(event) {
+            console.log('Key released: ', event.key);
+        });
+
+        // Example 14
+        var mouseOutDiv = document.getElementById('mouseOverDiv');
+        // mouseOutDiv should be using the mouseout event
+        mouseOutDiv.addEventListener('mouseOver', function() {
+            console.log('Mouse is now outside the div');
+        });
+
+        // Example 15
+        document.getElementById('doubleClickDiv').addEventListener('dblclick', function(e) {
+            e.target.styles.color = 'white'; // Incorrect use of 'styles', should be 'style'
+        });
+    </script>
+
+</body>
+</html>
