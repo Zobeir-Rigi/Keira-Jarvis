@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, how's it going?</p>
+    <button id = 'changeColor'>change button style</button>
+    <script>
+
+        const changePStyle = ()=>{
+            let para = document.querySelector('p')
+            para.style.fontSize = '40px'
+            para.style.backgroundColor = 'green'
+        }
+        let but = document.getElementById('changeColor').addEventListener('click',changePStyle )
+
+    </script>
+</body>
+</html>
