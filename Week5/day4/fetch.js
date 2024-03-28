@@ -4,6 +4,7 @@ const signal = abortController.signal
 fetch ('http://jsonplaceholder.typicode.com/users',{signal})
 .then(response=>response.json())
 .then(users=>{
+    console.log(users[0].email)
     const userCard = document.getElementById('userCard')
     users.forEach(user=>{
         console.log(user.name)
