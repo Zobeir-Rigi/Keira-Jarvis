@@ -1,7 +1,7 @@
-const abortController = new AbortController()
-const signal = abortController.signal
+// const abortController = new AbortController()
+// const signal = abortController.signal
 
-fetch ('http://jsonplaceholder.typicode.com/users',{signal})
+fetch ('http://jsonplaceholder.typicode.com/users')
 .then(response=>response.json())
 .then(users=>{
     console.log(users[0].email)
@@ -22,6 +22,6 @@ fetch ('http://jsonplaceholder.typicode.com/users',{signal})
     })
 })
 .catch(error => console.error('error fetching users:', error))
-setTimeout(()=>{
-    abortController.abort()
-},5000)
+// setTimeout(()=>{
+//     abortController.abort()
+// },5000)
