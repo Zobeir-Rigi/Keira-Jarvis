@@ -5,21 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+       * {
+            box-sizing: var(--box-sizing);
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(230, 223, 223);
+            height: 100vh;
+            padding: 10px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         #userCard {
             display: flex;
             flex-wrap: wrap;  
+            gap: 10px;
         }
       .user-details{
         display: flex;
         flex-direction: column;
         height: 100px;
         border: solid 1px;
-        padding: 2px;
+        border-radius: 10px;
+        padding: 10px;
        }
+       .name{}
     </style>
 </head>
 <body>
     <div class="container">
+        <h1>Users Details API</h1>
         <section id="userCard">
          </section>
     </div>
