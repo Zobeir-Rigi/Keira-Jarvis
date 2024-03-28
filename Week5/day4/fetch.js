@@ -1,7 +1,7 @@
 // const abortController = new AbortController()
 // const signal = abortController.signal
 
-fetch ('http://jsonplaceholder.typicode.com/users')
+fetch ('https://jsonplaceholder.typicode.com/users')
 .then(response=>response.json())
 .then(users=>{
     console.log(users[0].email)
