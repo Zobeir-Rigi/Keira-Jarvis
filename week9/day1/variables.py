@@ -10,7 +10,7 @@
 "" '' # 2. Assign the object the value
 "" '' # 3. use or print the object
 
-
+num1=5; num2=2 ; num3=3
 answer1 = num1 + num2
 print(answer1)
 answer2 = num3 * num2
