@@ -24,7 +24,7 @@ print(answer3)
 "" '' # In the code below, multiple values(objects) are assigned to multiple variables in a single line respectively
 "" '' # That is the variables: 1. name 2. address 3.interest
 
-name, address, interest = "your name", "your fake address", "your interest"
+name, address, interest = "Zobeir", "Camden", "software engineering"
 print(name, address, interest)
 
 
@@ -45,7 +45,7 @@ print(
 
 "" '' # You have now seen the how to assign multiple values(objects) to multiple variables and chained assignment.
 "" '' # In your own words, can you explain the difference between the two assignments(multiple variables and chained assignment.)?"
-
+"" '' # we use same value for different varilble
 
 
 "" '' # Object references 2
