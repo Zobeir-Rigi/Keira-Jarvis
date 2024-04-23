@@ -26,7 +26,7 @@ for i in range (1,21):
 for i in range(0,31,5):
     print(i)
 "Task 4:  Modify the code you produced in task 3 to count down in steps of 5 (from a high number(30) to a low number greater or equal to 1)"
-for i in (30,0,-5):
+for i in range(30 , 0, -5):
     print(i)
 "Further reading on python for statements"
 # https://docs.python.org/3/tutorial/controlflow.html?highlight=loop#for-statements
