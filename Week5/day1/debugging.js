@@ -1,7 +1,6 @@
 
 
-// Debugging Exercise 1: Selecting an Element
-// Intended to change the heading text.
+
 var myHeading = document.querySelector('h1');
 myHeading.textContnt = 'New Heading Text';
 
