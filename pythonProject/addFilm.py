@@ -9,13 +9,13 @@ def insertFilm():
     duration = input("Enter the duration of the movie: ")
     genre = input ("Enter the genre of movie: ")
 
-    myFilm.append(title)
-    myFilm.append(yearReleased)
-    myFilm.append(rating)
-    myFilm.append(duration)
-    myFilm.append(genre)
+    # myFilm.append(title)
+    # myFilm.append(yearReleased)
+    # myFilm.append(rating)
+    # myFilm.append(duration)
+    # myFilm.append(genre)
 
-    # myFilm = myFilm + [title, yearReleased, rating, duration, genre]
+    myFilm = myFilm + [title, yearReleased, rating, duration, genre]
     
     try:
         cursor.execute("INSERT INTO tblFilms (title, yearReleased, rating, duration, genre ) VALUES(?,?,?,?,?)", myFilm)
