@@ -15,5 +15,21 @@ def printFilmsByGenre():
     except sql.OperationalError as e:
         print(f"Error: {e}")
 
+def printFilmByYear():
+    movieYear = int(input("Enter the year which movie released: "))
+    try:
+        cursor.execute("SELECT * FROM tblFilms WHERE yearReleased = ?", (movieYear,))
+        films = cursor.fetchall()
+        if films:
+            print(f"Movies released in {movieYear}:")
+            for afilm in films:
+                print(afilm)
+        else:
+            print(f"No movies found released in {movieYear}")
+    except sql.OperationalError as e:
+        print(f"Error: {e}")
+
 if __name__ == "__main__":
     printFilmsByGenre()
+    printFilmByYear()
+
