@@ -30,7 +30,7 @@ def printFilmByYear():
         print(f"Error: {e}")
 
 def printFilmByRating():
-    movieRating = int(input("Enter the rating of the movie: "))
+    movieRating = input("Enter the rating of the movie: ").title()
     try:
         cursor.execute("SELECT * FROM tblFilms WHERE rating = ?", (movieRating,))
         filmsByRate = cursor.fetchall()
