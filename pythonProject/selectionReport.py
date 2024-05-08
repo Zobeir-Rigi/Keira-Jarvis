@@ -29,7 +29,37 @@ def printFilmByYear():
     except sql.OperationalError as e:
         print(f"Error: {e}")
 
+def printFilmByRating():
+    movieRating = int(input("Enter the rating of the movie: "))
+    try:
+        cursor.execute("SELECT * FROM tblFilms WHERE rating = ?", (movieRating,))
+        filmsByRate = cursor.fetchall()
+        if filmsByRate:
+            print(f"Movies released in {movieRating}:")
+            for film in filmsByRate:
+                print(film)
+        else:
+            print(f"No movies found released in {movieRating}")
+    except sql.OperationalError as e:
+        print(f"Error: {e}")
+
+def printByDuration():
+    movieDuration = int(input("Enter the duration of the movie: "))
+    try:
+        cursor.execute("SELECT * FROM tblFilms WHERE duration = ?", (movieDuration,))
+        filmsDuration = cursor.fetchall()
+        if filmsDuration:
+            print(f"Movies released in {movieDuration}:")
+            for hours in filmsDuration:
+                print(hours)
+        else:
+            print(f"No movies found released in {movieDuration}")
+    except sql.OperationalError as e:
+        print(f"Error: {e}")
+
 if __name__ == "__main__":
     printFilmsByGenre()
     printFilmByYear()
+    printFilmByRating()
+    printByDuration()
 
